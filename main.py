@@ -1,10 +1,15 @@
 ########################################################################
-#Stuti Sapru
+#RPG_Menu
 #CS 30
 #March 14, 2023
-#A simple version of a "Choose your adventure" game
+#Stuti Sapru
+#Version 001
 ########################################################################
+'''
+A simple version of a "Choose your adventure" game
 
+The user gets to choose between 3 options on this survival themed game. Every option is linked to one another, and the function loops throught the code until the user chooses to exit the game. Several of the functions are interconnected. For example, choosing the option 'laze around in bed' eventually leads to the same results as the option 'go for a run'. Hence, the game creates a loop where the user has no way of survival and is forver relives the entire day until they choose to quit the game, which can be done by typing 'quit' at any time in the game. The game also allocates for any spelling errors or invalid inputs by asking the user to restart the game.
+'''
 
 def game_over():
     """
@@ -115,6 +120,7 @@ def start():
         #invalid user entry
         other()
         start()
+
 
 #these are the user instructions in order for the program to work
 print("Please type all answers in lower case and exactly as given in the "
