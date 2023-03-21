@@ -1,10 +1,10 @@
-########################################################################
+##############################################################################
 #RPG_Menu
 #CS 30
 #March 14, 2023
 #Stuti Sapru
-#Version 001
-########################################################################
+#Version 006
+##############################################################################
 '''
 A simple version of a 'Choose your adventure' game
 
@@ -12,30 +12,32 @@ The user gets to choose between 3 options on this survival themed game.
 Every option is linked to one another, and the function loops throughout the
 code until the user chooses to exit the game. Several of the functions are
 interconnected. For example, choosing the option 'laze around in bed'
-eventually leads to the same results as the option 'go for a run'. Hence, 
-the game creates a loop where the user has no way of survival and is forever 
+eventually leads to the same results as the option 'go for a run'. Hence,
+the game creates a loop where the user has no way of survival and is forever
 relives the entire day until they choose to quit the game, which can be done
-by typing 'quit' at any time in the game. The game also allocates for any spelling errors or invalid inputs by asking the user to restart the game.
+by typing 'quit' at any time in the game. The game also allocates for any 
+spelling errors or invalid inputs by asking the user to restart the game.
 '''
 
 
 def game_over():
     """
-    The user chooses to quit the game
+    Thi function prints when the user chooses to quit the game.
     """
     print("\nYou exist no more. Perhaps you have never existed. Goodbye.")
 
 
 def other():
     """
-    The user types an invalid input
+    This function prints when the user types an invalid input.
     """
-    print("\nI didn't understand that. Please restart the game and try again.")
+    print("\nI didn't understand that. Please restart the game and try"
+          " again.")
 
 
 def run():
     """
-    The user chooses to run
+    This function prints when the user chooses to run.
     """
     print("\nYou have chosen to run. 20 minutes into your run, you smell "
         "burning and look back to see your house on fire. You think you have "
@@ -47,8 +49,8 @@ def run():
 
 def start():
     """
-    prints out the main menu and provides the user with choices to procees the 
-    game 
+    This function prints out the main menu and loops throughout forever until
+    the user chooses to quit the game.
     """
     print("\nIt's a new day! What would you like to do today?")
     path = input("laze around in bed, make some breakfast or go for a run?")
